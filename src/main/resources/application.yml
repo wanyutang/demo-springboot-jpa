@@ -1,8 +1,12 @@
 spring:
+  profiles:
+    group:
+      default:
+        - local
   datasource:
-    url: jdbc:sqlserver://10.20.30.196:1433;encrypt=false;database=hncb;
+    url: jdbc:sqlserver://127.0.0.1:1433;encrypt=false;database=databaseName;
     username: sa
-    password: 1qaz2wsx#EDC
+    password: sa123
     driver-class-name: com.microsoft.sqlserver.jdbc.SQLServerDriver
   jpa:
     show-sql: true
